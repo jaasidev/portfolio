@@ -1,0 +1,14 @@
+---
+const { titulo, imagen } = Astro.props
+---
+
+<article
+  class="flex flex-col items-center justify-center py-5 px-9 bg-[--bg-200] border border-[--accent-200] shadow-sm shadow-[--primary-100] rounded-md w-36 h-32 gap-2"
+>
+  <div>
+    <img src={imagen} class="size-14" />
+  </div>
+  <span class="text-[--text-100] font-medium text-center">
+    {titulo}
+  </span>
+</article>
