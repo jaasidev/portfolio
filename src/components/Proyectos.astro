@@ -1,0 +1,39 @@
+---
+import Carditem from './Carditem.astro'
+---
+
+<section class="p-5">
+  <h2
+    class="text-[--text-100] text-4xl font-medium mb-3 flex items-center gap-2"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-device-desktop-code"
+      width="44"
+      height="44"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M12.5 16h-8.5a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v8"
+      ></path>
+      <path d="M7 20h4"></path>
+      <path d="M9 16v4"></path>
+      <path d="M20 21l2 -2l-2 -2"></path>
+      <path d="M17 17l-2 2l2 2"></path>
+    </svg>
+    Proyectos
+  </h2>
+  <div class="flex items-center gap-3 mt-4">
+    <Carditem
+      imagen="/src/assets/weather.png"
+      titulo="Jasweather"
+      descripcion="Web para conocer el tiempo y las estadísticas actualizadas en tiempo real del clima."
+    />
+  </div>
+</section>
