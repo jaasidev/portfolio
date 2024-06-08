@@ -2,7 +2,7 @@
 import Carditem from './Carditem.astro'
 ---
 
-<section class="p-5">
+<section class="p-5 mt-10" id="proyectos">
   <h2
     class="text-[--text-100] text-4xl font-medium mb-3 flex items-center gap-2"
   >
@@ -29,11 +29,21 @@ import Carditem from './Carditem.astro'
     </svg>
     Proyectos
   </h2>
-  <div class="flex items-center gap-3 mt-4">
+  <div class="flex items-center justify-evenly mt-4 gap-4">
     <Carditem
       imagen="/src/assets/weather.png"
       titulo="Jasweather"
       descripcion="Web para conocer el tiempo y las estadísticas actualizadas en tiempo real del clima."
+    />
+    <Carditem
+      imagen="/src/assets/board.png"
+      titulo="Jasboard"
+      descripcion="Board estilo trello para organizar tus tareas y pendientes en diferentes listas reordenables"
+    />
+    <Carditem
+      imagen="/src/assets/escuela.png"
+      titulo="Miguel de Cervantes"
+      descripcion="Página web informativa sobre la escuela de idiomas Miguel de Cervantes Saavedra."
     />
   </div>
 </section>
