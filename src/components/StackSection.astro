@@ -2,8 +2,32 @@
 import StackItem from './StackItem.astro'
 ---
 
-<section>
-  <h2 class="text-[--primary-100] text-3xl mb-3">Habilidades Técnicas</h2>
+<section class="mt-10">
+  <h2
+    class="text-[--text-100] text-4xl font-medium mb-3 flex items-center gap-2"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-tools"
+      width="44"
+      height="44"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+      <path d="M14.5 5.5l4 4"></path>
+      <path d="M12 8l-5 -5l-4 4l5 5"></path>
+      <path d="M7 8l-1.5 1.5"></path>
+      <path d="M16 12l5 5l-4 4l-5 -5"></path>
+      <path d="M16 17l-1.5 1.5"></path>
+    </svg>
+    Habilidades Técnicas
+  </h2>
   <div class="flex items-center gap-4 flex-wrap">
     <StackItem titulo="HTML" imagen="/src/assets/html5.svg" />
     <StackItem titulo="CSS" imagen="/src/assets/css.svg" />
