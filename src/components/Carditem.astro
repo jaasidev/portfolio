@@ -2,11 +2,14 @@
 const { imagen, titulo, descripcion } = Astro.props
 ---
 
-<a href="#" class="card">
+<a
+  href="#"
+  class="card bg-[--bg-200] text-[--text-100] h-96 w-64 shadow-sm shadow-[--primary-100] my-2"
+>
   <figure>
-    <img src={imagen} />
+    <img src={imagen} class="w-full" />
   </figure>
-  <div class="card-body">
+  <div class="card-body flex-1">
     <h3 class="card-title">
       {titulo}
     </h3>
