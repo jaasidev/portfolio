@@ -1,11 +1,13 @@
 ---
-const { imagen, titulo, descripcion, enlace } = Astro.props
+import Tag from './Tag.astro'
+
+const { imagen, titulo, descripcion, enlace, tags } = Astro.props
 ---
 
 <a
   href={enlace}
   target="_blank"
-  class="card bg-[--bg-100] text-[--text-100] h-96 w-72 shadow-sm shadow-[--primary-100] my-2 cursor-pointer hover:shadow-md hover:shadow-[--primary-100] transition-shadow"
+  class="card card-compact bg-[--bg-100] text-[--text-100] h-[400px] w-72 shadow-sm shadow-[--primary-100] my-2 cursor-pointer hover:shadow-md hover:shadow-[--primary-100] transition-shadow"
 >
   <figure>
     <img src={imagen} class="w-full" />
@@ -14,8 +16,15 @@ const { imagen, titulo, descripcion, enlace } = Astro.props
     <h3 class="card-title">
       {titulo}
     </h3>
-    <p class="text-[--text-200] line-clamp-3 text-pretty">
+    <p class="text-[--text-200] line-clamp-3 text-pretty text-lg">
       {descripcion}
     </p>
+    <div class="flex items-center gap-3 mt-2">
+      {
+        tags.map((value, index) => {
+          return <Tag key={index} content={value} />
+        })
+      }
+    </div>
   </div>
 </a>

@@ -4,7 +4,7 @@ import StackItem from './StackItem.astro'
 
 <section class="mt-10 p-5" id="habilidades">
   <h2
-    class="text-[--text-100] text-4xl font-medium mb-6 flex items-center gap-2"
+    class="text-[--text-100] text-4xl font-medium mb-6 flex items-center gap-2 justify-center lg:justify-start"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +26,11 @@ import StackItem from './StackItem.astro'
       <path d="M16 12l5 5l-4 4l-5 -5"></path>
       <path d="M16 17l-1.5 1.5"></path>
     </svg>
-    Habilidades Técnicas
+    Habilidades
   </h2>
-  <div class="flex items-center gap-4 flex-wrap">
+  <div
+    class="flex items-center gap-4 flex-wrap justify-evenly lg:justify-start"
+  >
     <StackItem titulo="HTML" imagen="/src/assets/html5.svg" />
     <StackItem titulo="CSS" imagen="/src/assets/css.svg" />
     <StackItem titulo="Javascript" imagen="/src/assets/javascript.svg" />
