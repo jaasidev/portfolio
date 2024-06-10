@@ -1,7 +1,9 @@
 <header
   class="flex items-center justify-center w-full shadow-sm sticky top-0 left-0 right-0 bg-white backdrop-blur-md bg-opacity-35 z-50"
 >
-  <nav class="max-w-[1200px] flex items-center justify-between p-5 w-full">
+  <nav
+    class="max-w-[1200px] items-center justify-between p-5 w-full hidden md:flex"
+  >
     <a href="#" class="text-[--text-100]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -37,5 +39,62 @@
         <a href="#proyectos"> Proyectos </a>
       </li>
     </ul>
+  </nav>
+  <nav class="p-5 w-full text-[--text-100]">
+    <input type="checkbox" id="nav-mobile" hidden />
+    <label for="nav-mobile"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-menu-2"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg></label
+    >
+    <div class="fixed">
+      <ul>
+        <li>
+          <a href="#" class="flex items-center gap-1 font-medium">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-home"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+            </svg>
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="#educacion"> Educación </a>
+        </li>
+        <li>
+          <a href="#habilidades"> Habilidades </a>
+        </li>
+        <li>
+          <a href="#proyectos"> Proyectos </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
