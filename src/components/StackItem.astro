@@ -1,12 +1,12 @@
 ---
-const { titulo, imagen } = Astro.props
+const { titulo, imagen, alt } = Astro.props
 ---
 
 <article
   class="flex flex-col items-center justify-center lg:py-5 lg:px-9 bg-[--bg-200] border border-[--primary-100] shadow-sm shadow-[--primary-100] rounded-md lg:w-44 lg:h-40 gap-3 h-28 w-32 p-3"
 >
   <div>
-    <img src={imagen} class="lg:size-16 size-10" />
+    <img src={imagen} class="lg:size-16 size-10" alt={alt} />
   </div>
   <span class="text-[--text-100] font-medium text-center">
     {titulo}
