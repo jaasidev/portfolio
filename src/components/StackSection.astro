@@ -1,5 +1,10 @@
 ---
 import StackItem from './StackItem.astro'
+
+import { getLenguaje } from '../i18n/getlenguaje'
+
+const {currentLocale}= Astro
+const i18n = getLenguaje(currentLocale).habilidades
 ---
 
 <section class="mt-10 p-5" id="habilidades">
@@ -26,7 +31,7 @@ import StackItem from './StackItem.astro'
       <path d="M16 12l5 5l-4 4l-5 -5"></path>
       <path d="M16 17l-1.5 1.5"></path>
     </svg>
-    Habilidades
+    {i18n}
   </h2>
   <div
     class="flex items-center gap-4 flex-wrap justify-evenly lg:justify-start"

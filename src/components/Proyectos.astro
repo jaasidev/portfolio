@@ -1,5 +1,9 @@
 ---
 import Carditem from './Carditem.astro'
+import { getLenguaje } from '../i18n/getlenguaje'
+
+const {currentLocale}= Astro
+const i18n = getLenguaje(currentLocale).proyectos
 ---
 
 <section class="p-5 mt-10" id="proyectos">
@@ -27,29 +31,29 @@ import Carditem from './Carditem.astro'
       <path d="M20 21l2 -2l-2 -2"></path>
       <path d="M17 17l-2 2l2 2"></path>
     </svg>
-    Proyectos
+    {i18n.titulo}
   </h2>
   <div class="flex items-center justify-evenly mt-4 gap-4 flex-wrap">
     <Carditem
       imagen="/weather.png"
-      titulo="Jasweather"
-      descripcion="Web para conocer el clima y las estadísticas actualizadas en tiempo real."
+      titulo={i18n.weather.title}
+      descripcion={i18n.weather.description}
       tags={['React', 'TailwindCss']}
       enlace="https://jasweather.pages.dev/"
       alt="mockup Jasweather"
     />
     <Carditem
       imagen="/board.png"
-      titulo="Jasboard"
-      descripcion="Board estilo trello para organizar tus tareas diferentes listas reordenables"
+      titulo={i18n.board.title}
+      descripcion={i18n.board.description}
       tags={['React', 'TailwindCss']}
       enlace="https://jasboard.pages.dev/"
       alt="mockup Jasboard"
     />
     <Carditem
       imagen="/escuela.png"
-      titulo="Miguel de Cervantes"
-      descripcion="Página web informativa sobre la escuela de idiomas 'Miguel de Cervantes Saavedra'."
+      titulo={i18n.ecuela.title}
+      descripcion={i18n.ecuela.description}
       tags={['Astro', 'TailwindCss']}
       enlace="https://migueldecervantesescuelaidioma.pages.dev/"
       alt="mockup web Miguel de Cervantes"

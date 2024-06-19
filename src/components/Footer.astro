@@ -1,13 +1,19 @@
+---
+import { getLenguaje } from '../i18n/getlenguaje'
+
+const {currentLocale}= Astro
+const i18n = getLenguaje(currentLocale).footer
+---
 <footer
   class="bg-[--bg-200] p-5 flex flex-col justify-center items-center sm:flex-row sm:justify-between text-[--text-200] mt-7"
 >
-  <span>Hecho por Jaasiel Beltrán</span>
+  <span>{i18n.frase}</span>
   <div class="items-center justify-center gap-2 flex">
     <a
       href="https://x.com/jaasi_dev"
       target="_blank"
       class="hover:text-[--primary-200] transition-colors"
-      aria-label="Ir a X"
+      aria-label={i18n.aria.X}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +36,7 @@
       href="https://www.linkedin.com/in/jaasiel-beltr%C3%A1n-alvarez-b3b3b5258"
       target="_blank"
       class="hover:text-[--primary-200] transition-colors"
-      aria-label="Ir a LinkedIn"
+      aria-label={i18n.aria.linkedin}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

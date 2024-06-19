@@ -1,3 +1,9 @@
+---
+import { getLenguaje } from '../i18n/getlenguaje'
+
+const {currentLocale}= Astro
+const {universidad, politécnico, escuela, titulo} = getLenguaje(currentLocale).educación
+---
 <section
   class="flex flex-col items-center justify-center mt-7 p-5"
   id="educacion"
@@ -21,7 +27,7 @@
       <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
       <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
     </svg>
-    Educación
+    {titulo}
   </h2>
   <div class="w-full mt-5  flex items-center justify-center lg:justify-start">
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
@@ -31,13 +37,13 @@
         >
         </div>
         <time class="mb-1 text-sm leading-none font-medium text-[--primary-300]"
-          >Enero 2023 ~ actualmente</time
+          >{universidad.fecha}</time
         >
-        <h3 class="text-lg lg:text-3xl font-semibold text-[--text-100]">
-          Universidad Central Marta Abreu de las Villas.
+        <h3 class="text-lg lg:text-3xl font-medium text-[--text-100]">
+          {universidad.title}
         </h3>
         <p class="mb-4 text-base font-normal text-[--text-200]">
-          Ingeniería en Telecomunicaciones y Electrónica (Curso por encuentros).
+          {universidad.certificado}
         </p>
       </li>
       <li class="mb-10 ms-4">
@@ -46,13 +52,13 @@
         >
         </div>
         <time class="mb-1 text-sm leading-none font-medium text-[--primary-300]"
-          >Enero 2022 ~ actualmente</time
+          >{escuela.fecha}</time
         >
-        <h3 class="text-lg lg:text-3xl font-semibold text-[--text-100]">
-          Escuela de idiomas "Miguel de Cervantes Saavedra".
+        <h3 class="text-lg lg:text-3xl font-medium text-[--text-100]">
+          {escuela.title}
         </h3>
         <p class="mb-4 text-base font-normal text-[--text-200]">
-          Certificado idioma inglés (B1).
+          {escuela.certificado}
         </p>
       </li>
       <li class="ms-4">
@@ -61,13 +67,13 @@
         >
         </div>
         <time class="mb-1 text-sm leading-none font-medium text-[--primary-300]"
-          >Septiembre 2018 ~ Julio 2022</time
+          >{politécnico.fecha}</time
         >
-        <h3 class="text-lg lg:text-3xl font-semibold text-[--text-100]">
-          Instituto Politécnico Industrial "Raúl Suárez Martínez".
+        <h3 class="text-lg lg:text-3xl font-medium text-[--text-100]">
+          {politécnico.title}
         </h3>
         <p class="mb-4 text-base font-normal text-[--text-200]">
-          Técnico Medio en Informática.
+          {politécnico.certificado}
         </p>
       </li>
     </ol>

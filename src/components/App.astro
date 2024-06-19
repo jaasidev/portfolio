@@ -6,9 +6,16 @@ import StackSection from './StackSection.astro'
 import Proyectos from './Proyectos.astro'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
+
+import { getLenguaje } from '../i18n/getlenguaje'
+
+const {currentLocale}= Astro
+const i18n = getLenguaje(currentLocale)
+
+
 ---
 
-<Layout title="Jaasiel Beltrán | Website">
+<Layout title="Jaasiel Beltrán | Website" description={i18n.description} lang={i18n.lenguaje}>
   <Header />
   <main class="max-w-[1000px] mt-6 w-full">
     <Title />

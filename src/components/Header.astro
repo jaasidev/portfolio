@@ -1,3 +1,10 @@
+---
+
+import { getLenguaje } from '../i18n/getlenguaje'
+
+const {currentLocale}= Astro
+const i18n = getLenguaje(currentLocale).header
+---
 <header
   class="flex items-center justify-center w-full shadow-sm sticky top-0 left-0 right-0 bg-white backdrop-blur-md bg-opacity-35 z-50"
 >
@@ -28,15 +35,7 @@
     >
       <li>
         <a class="hover:text-[--primary-100] transition-colors" href="#">
-          Inicio
-        </a>
-      </li>
-      <li>
-        <a
-          class="hover:text-[--primary-100] transition-colors"
-          href="#educacion"
-        >
-          Educación
+          {i18n.inicio}
         </a>
       </li>
       <li>
@@ -44,7 +43,7 @@
           class="hover:text-[--primary-100] transition-colors"
           href="#habilidades"
         >
-          Habilidades
+          {i18n.habilidades}
         </a>
       </li>
       <li>
@@ -52,12 +51,21 @@
           class="hover:text-[--primary-100] transition-colors"
           href="#proyectos"
         >
-          Proyectos
+        {i18n.proyectos}
         </a>
       </li>
+      <li>
+        <a
+          class="hover:text-[--primary-100] transition-colors"
+          href="#educacion"
+        >
+        {i18n.educacion}
+        </a>
+      </li>
+      
     </ul>
   </nav>
-  <nav class="p-5 w-full text-[--text-100] md:hidden">
+  <nav class="p-4 w-full text-[--text-100] md:hidden">
     <input type="checkbox" id="nav-mobile" hidden />
     <label for="nav-mobile"
       ><svg
@@ -122,27 +130,7 @@
                 <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
                 <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
               </svg>
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="#educacion" data-item class="flex items-center gap-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-school"
-                width="25"
-                height="25"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-                <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
-              </svg> Educación
+              {i18n.inicio}
             </a>
           </li>
           <li>
@@ -166,7 +154,7 @@
                 <path d="M7 8l-1.5 1.5"></path>
                 <path d="M16 12l5 5l-4 4l-5 -5"></path>
                 <path d="M16 17l-1.5 1.5"></path>
-              </svg> Habilidades
+              </svg> {i18n.habilidades}
             </a>
           </li>
           <li>
@@ -191,7 +179,27 @@
                 <path d="M9 16v4"></path>
                 <path d="M20 21l2 -2l-2 -2"></path>
                 <path d="M17 17l-2 2l2 2"></path>
-              </svg> Proyectos
+              </svg> {i18n.proyectos}
+            </a>
+          </li>
+          <li>
+            <a href="#educacion" data-item class="flex items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-school"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
+                <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+              </svg> {i18n.educacion}
             </a>
           </li>
         </ul>

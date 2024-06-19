@@ -1,0 +1,60 @@
+{
+  "description": "Portfolio de Jaasiel Beltrán Alvarez, cubano de 21 años de edad y apasionado por el desarrllo.",
+  "lenguaje":"en",
+  "header":{
+    "inicio":"Home",
+    "educacion": "Education",
+    "habilidades": "Skills",
+    "proyectos":"Projects"
+  },
+  "title":{
+    "role": "Frontend Developer",
+    "alt": "Jaasiel Beltrán Image",
+    "aria":{
+      "CV": "CV",
+      "email": "Send email",
+      "github":"Github profile"
+    }
+  },
+  "habilidades":"Skills",
+  "proyectos":{
+    "titulo": "Projects",
+    "weather":{
+      "title": "JasWeather",
+      "description":"Web para conocer el clima y las estadísticas actualizadas en tiempo real del clima."
+    },
+    "board":{
+      "title": "JasBoard",
+      "description":"App de escritorio para organizar tus pendientes en diferentes listas reordenables."
+    },
+    "ecuela":{
+      "title": "Miguel de Cervantes",
+      "description":"Página web informativa sobre la escuela de idiomas 'Miguel de Cervantes Saavedra'."
+    }
+  },
+  "educación":{
+    "titulo":"Education",
+    "universidad":{
+      "fecha":"Enero 2023 ~ actualmente",
+      "title": "Universidad Central Marta Abreu de las Villas.",
+      "certificado": "Ingeniería en Telecomunicaciones y Electrónica (Curso por encuentros)."
+    },
+    "escuela":{
+      "fecha":"Enero 2022 ~ actualmente",
+      "title": "Escuela de idiomas 'Miguel de Cervantes Saavedra.'",
+      "certificado": "Certificado Idioma Inglés(B1)."      
+    },
+    "politécnico":{
+      "fecha":"September 2018 ~ July 2022",
+      "title": "Instituto Politécnico Industrial 'Raúl Suárez Martínez'.",
+      "certificado": "Técnico Medio en Informática."      
+    }
+  },
+  "footer":{
+    "frase": "Made by Jaasiel Beltrán",
+    "aria":{
+      "X":"Go to X",
+      "linkedin": "Go to LinkedIn"
+    }
+  }
+}
