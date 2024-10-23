@@ -9,7 +9,13 @@
 
 <url>
   <loc>https://jaasidev.pages.dev/</loc>
-  <lastmod>2024-06-16T19:34:35+00:00</lastmod>
+  <lastmod>2024-06-19T15:08:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://jaasidev.pages.dev/en/</loc>
+  <lastmod>2024-06-19T15:08:42+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 

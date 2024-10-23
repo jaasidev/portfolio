@@ -1,0 +1,22 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { getLenguaje } from "../../../i18n/getlenguaje";
+
+export async function getStaticPaths() {
+  const { currentLocale } = Astro;
+  const i18n = getLenguaje(currentLocale);
+
+
+  return [
+    {params: { id: "jasweather" }, props: { title: i18n.description, lang: i18n.lenguaje } },
+    {params:{id: "jasboard"}, props:{title: i18n.description}},
+    {params:{id: "escuela-idioma-Miguel-Cervantes"}, props:{title: i18n.description}}
+  ];
+}
+
+const{titulo, lang, description} =Astro.props
+---
+
+<Layout title={titulo} description={description} lang={lang}>
+  
+</Layout>

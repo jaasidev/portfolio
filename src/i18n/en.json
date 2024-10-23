@@ -6,8 +6,7 @@
     "educacion": "Education",
     "habilidades": "Skills",
     "proyectos": "Projects"
-  }
-  ,
+  },
   "title": {
     "role": "Frontend Developer",
     "alt": "Jaasiel Beltrán Image",
@@ -16,52 +15,64 @@
       "email": "Send email",
       "github": "Github Profile"
     }
-  }
-  ,
+  },
   "habilidades": "Skills",
   "proyectos": {
     "titulo": "Projects",
     "weather": {
       "title": "JasWeather",
-      "description": "Website to check real-time weather and statistics."
-    }
-    ,
+      "description": "Website to check real-time weather and statistics.",
+      "link":"https://jasweather.pages.dev/",
+      "github":"https://github.com/jaasidev/weather-app",
+      "herramientas": ["react", "tailwind"],
+      "img":"/weather.png"
+    },
     "board": {
       "title": "JasBoard",
-      "description": "Desktop app to organize tasks in reorderable lists."
-    }
-    ,
+      "description": "Desktop app to organize tasks in reorderable lists.",
+      "link":"https://jasboard.pages.dev/",
+      "github":"https://github.com/jaasidev/trello-react-app",
+      "herramientas": ["react", "tailwind"],
+      "img":"/board.png"
+    },
     "ecuela": {
       "title": "Miguel de Cervantes",
-      "description": "Informative website about the language school 'Miguel de Cervantes Saavedra'."
-    }}
-  ,
+      "description": "Website about the language school 'Miguel de Cervantes'.",
+      "link":"https://migueldecervantesescuelaidioma.pages.dev/",
+      "github":"https://github.com/jaasidev/idioma-landing-MCS",
+      "herramientas": ["astro", "tailwind"],
+      "img":"/escuela.png"
+    }
+  },
   "educación": {
     "titulo": "Education",
     "universidad": {
       "fecha": "January 2023 ~ Present",
       "title": "Central University Marta Abreu de las Villas.",
       "certificado": "Telecommunications and Electronics Engineering (Part-time Course)."
-    }
-    ,
+    },
     "escuela": {
-      "fecha": "January 2022 ~ Present",
+      "fecha": "January 2022 ~ June 2024",
       "title": "Language School 'Miguel de Cervantes Saavedra.'",
       "certificado": "English Language Certificate (B1)."
-    }
-    ,
+    },
     "politécnico": {
       "fecha": "September 2018 ~ July 2022",
       "title": "Industrial Polytechnic Institute 'Raúl Suárez Martínez'.",
       "certificado": "Technical Degree in Informatics."
     }
-  }
-  ,
+  },
   "footer": {
     "frase": "Made by Jaasiel Beltrán",
     "aria": {
       "X": "Go to X",
       "linkedin": "Go to LinkedIn"
     }
+  },
+  "experiencia": {
+    "fecha": "July 2024 ~ Present",
+    "lugar": "Code",
+    "rol": "Frontend Developer",
+    "titulo": "Experience"
   }
 }

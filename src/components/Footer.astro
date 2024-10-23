@@ -5,7 +5,7 @@ const {currentLocale}= Astro
 const i18n = getLenguaje(currentLocale).footer
 ---
 <footer
-  class="bg-[--bg-200] p-5 flex flex-col justify-center items-center sm:flex-row sm:justify-between text-[--text-200] mt-7"
+  class="bg-[--bg-200] p-5 flex flex-col justify-center items-center sm:flex-row sm:justify-between text-[--text-200] mt-7 w-full"
 >
   <span>{i18n.frase}</span>
   <div class="items-center justify-center gap-2 flex">

@@ -1,60 +1,78 @@
 {
   "description": "Portfolio de Jaasiel Beltrán Alvarez, cubano de 21 años de edad y apasionado por el desarrllo.",
-  "lenguaje":"es",
-  "header":{
-    "inicio":"Inicio",
+  "lenguaje": "es",
+  "header": {
+    "inicio": "Inicio",
     "educacion": "Educación",
     "habilidades": "Habilidades",
-    "proyectos":"Proyectos"
+    "proyectos": "Proyectos"
   },
-  "title":{
+  "title": {
     "role": "Desarrollador Frontend",
     "alt": "Jaasiel Beltrán Image",
-    "aria":{
+    "aria": {
       "CV": "CV",
       "email": "Enviar email",
-      "github":"Perfil Github"
+      "github": "Perfil Github"
     }
   },
-  "habilidades":"Habilidades",
-  "proyectos":{
+  "habilidades": "Habilidades",
+  "proyectos": {
     "titulo": "Proyectos",
-    "weather":{
+    "weather": {
       "title": "JasWeather",
-      "description":"Web para conocer el clima y las estadísticas actualizadas en tiempo real del clima."
+      "description": "Web para conocer el clima y las estadísticas actualizadas en tiempo real del clima.",
+      "link":"https://jasweather.pages.dev/",
+      "github":"",
+      "herramientas": ["react", "tailwind"],
+      "img":"/weather.png"
     },
-    "board":{
+    "board": {
       "title": "JasBoard",
-      "description":"App de escritorio para organizar tus pendientes en diferentes listas reordenables."
+      "description": "App de escritorio para organizar tus pendientes en diferentes listas reordenables.",
+      "link":"https://jasboard.pages.dev/",
+      "github":"",
+      "herramientas": ["react", "tailwind"],
+      "img":"/board.png"
     },
-    "ecuela":{
+    "ecuela": {
       "title": "Miguel de Cervantes",
-      "description":"Página web informativa sobre la escuela de idiomas 'Miguel de Cervantes Saavedra'."
+      "description": "Página web informativa sobre la escuela de idiomas 'Miguel de Cervantes Saavedra'.",
+      "link":"https://migueldecervantesescuelaidioma.pages.dev/",
+      "github":"",
+      "herramientas": ["astro", "tailwind"],
+      "img":"/escuela.png"
     }
   },
-  "educación":{
-    "titulo":"Educación",
-    "universidad":{
-      "fecha":"Enero 2023 ~ actualmente",
+  "educación": {
+    "titulo": "Educación",
+    "universidad": {
+      "fecha": "Enero 2023 ~ actualmente",
       "title": "Universidad Central Marta Abreu de las Villas.",
       "certificado": "Ingeniería en Telecomunicaciones y Electrónica (Curso por encuentros)."
     },
-    "escuela":{
-      "fecha":"Enero 2022 ~ actualmente",
+    "escuela": {
+      "fecha": "Enero 2022 ~ Junio 2024",
       "title": "Escuela de idiomas 'Miguel de Cervantes Saavedra.'",
-      "certificado": "Certificado Idioma Inglés(B1)."      
+      "certificado": "Certificado Idioma Inglés(B1)."
     },
-    "politécnico":{
-      "fecha":"Septiembre 2018 ~ Julio 2022",
+    "politécnico": {
+      "fecha": "Septiembre 2018 ~ Julio 2022",
       "title": "Instituto Politécnico Industrial 'Raúl Suárez Martínez'.",
-      "certificado": "Técnico Medio en Informática."      
+      "certificado": "Técnico Medio en Informática."
     }
   },
-  "footer":{
+  "footer": {
     "frase": "Hecho por Jaasiel Beltrán",
-    "aria":{
-      "X":"Ir a X",
+    "aria": {
+      "X": "Ir a X",
       "linkedin": "Ir a LinkedIn"
     }
+  },
+  "experiencia": {
+    "fecha": "Julio 2024 ~ actualmente",
+    "lugar": "Code",
+    "rol": "Desarrollador Frontend",
+    "titulo": "Experiencia"
   }
 }

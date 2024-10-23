@@ -1,4 +1,5 @@
 ---
+import ViewTransitions from "astro/components/ViewTransitions.astro"
 const { title, description, lang } = Astro.props
 ---
 
@@ -16,6 +17,7 @@ const { title, description, lang } = Astro.props
     <title>{title}</title>
   </head>
   <body class="flex flex-col items-center bg-[--bg-100] min-h-screen">
+    <ViewTransitions/>
     <slot />
   </body>
 </html>
