@@ -1,7 +1,7 @@
 ---
 import Tag from './Tag.astro'
 
-const { imagen, titulo, descripcion, enlace, alt } = Astro.props
+const { imagen, titulo, descripcion, enlace, alt, id } = Astro.props
 ---
 
 <a
@@ -9,7 +9,7 @@ const { imagen, titulo, descripcion, enlace, alt } = Astro.props
   class="card card-compact bg-[--bg-100] text-[--text-100] h-[360px] w-72 shadow-sm shadow-[--primary-100] my-2 cursor-pointer hover:shadow-md hover:shadow-[--primary-100] transition-shadow"
 >
   <figure>
-    <img src={imagen} class="w-full" alt={alt} transition:name="image-proyecto" />
+    <img src={imagen} class="w-full" alt={alt} transition:name={`imagen-proyecto-${id}`} />
   </figure>
   <div class="card-body flex-1">
     <h3 class="card-title">

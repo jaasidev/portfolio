@@ -1,22 +1,107 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import { getLenguaje } from "../../../i18n/getlenguaje";
+import Footer from "../../../components/Footer.astro";
+import Enlaces from "../../../components/Enlaces.astro";
+import Tag from "../../../components/Tag.astro";
 
 export async function getStaticPaths() {
-  const { currentLocale } = Astro;
-  const i18n = getLenguaje(currentLocale);
-
-
+  const i18n = getLenguaje('en');
   return [
-    {params: { id: "jasweather" }, props: { title: i18n.description, lang: i18n.lenguaje } },
-    {params:{id: "jasboard"}, props:{title: i18n.description}},
-    {params:{id: "escuela-idioma-Miguel-Cervantes"}, props:{title: i18n.description}}
+    {
+      params: { id: "jasweather" },
+      props: {
+        id: "jasweather",
+        title: i18n.proyectos.weather.title,
+        lang: i18n.lenguaje,
+        description: i18n.proyectos.weather.description,
+        img: i18n.proyectos.weather.img,
+        herramientas: i18n.proyectos.weather.herramientas,
+      },
+    },
+    {
+      params: { id: "jasboard" },
+      props: {
+        id: "jasboard",
+        title: i18n.proyectos.board.title,
+        lang: i18n.lenguaje,
+        description: i18n.proyectos.board.description,
+        img: i18n.proyectos.board.img,
+        herramientas: i18n.proyectos.board.herramientas,
+      },
+    },
+    {
+      params: { id: "escuela-idioma-Miguel-Cervantes" },
+      props: {
+        id: "escuela-idioma-Miguel-Cervantes",
+        title: i18n.proyectos.ecuela.title,
+        lang: i18n.lenguaje,
+        description: i18n.proyectos.ecuela.description,
+        img: i18n.proyectos.ecuela.img,
+        herramientas: i18n.proyectos.ecuela.herramientas,
+      },
+    },
   ];
 }
 
-const{titulo, lang, description} =Astro.props
+const { title, lang, description, img, id, herramientas } = Astro.props;
 ---
 
-<Layout title={titulo} description={description} lang={lang}>
-  
+<Layout title={title} description={description} lang={lang}>
+  <main
+    class="max-w-[1000px] mt-6 w-full flex flex-col items-center justify-center"
+  >
+    <a
+      href="/en/"
+      class="text-xs font-semibold self-start text-slate-600 flex items-center gap-1"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x-bind:width="size"
+        x-bind:height="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        x-bind:stroke-width="stroke"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        width="18"
+        height="18"
+        stroke-width="2"
+      >
+        <path d="M5 12l14 0"></path>
+        <path d="M5 12l4 4"></path>
+        <path d="M5 12l4 -4"></path>
+      </svg>Return</a
+    >
+    <section class="flex w-full flex-col md:flex-row">
+      <img
+        src={`${img}`}
+        class="mt-5 w-[450px] rounded-md order-2 md:order-1"
+        transition:name={`imagen-proyecto-${id}`}
+      />
+      <div class="px-5 py-6 order-1 md:order-2">
+        <h3
+          class="text-[--text-100] text-2xl md:text-4xl font-medium mb-5 pl-6"
+        >
+          Title: <span class="text-[--text-200] font-normal"
+            >{`'${title}'`}</span
+          >
+        </h3>
+        <p class="text-[--text-200] pl-6 md:text-2xl text-xl mb-5">
+          <span class="text-[--text-200] font-medium">Description:</span>
+          {description}
+        </p>
+        <div class="flex items-center gap-3 pl-6 mt-2 mb-5">
+          {
+            herramientas.map((value, index) => {
+              return <Tag key={index} tool={value} />;
+            })
+          }
+        </div>
+        <Enlaces github="#" link="#" />
+      </div>
+    </section>
+    <Footer />
+  </main>
 </Layout>

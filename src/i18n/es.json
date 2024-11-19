@@ -24,24 +24,27 @@
       "description": "Web para conocer el clima y las estadísticas actualizadas en tiempo real del clima.",
       "link":"https://jasweather.pages.dev/",
       "github":"",
-      "herramientas": ["react", "tailwind"],
-      "img":"/weather.png"
+      "herramientas": ["react", "tailwindcss"],
+      "img":"/weather.png",
+      "enlaces":"/projects/jasweather"
     },
     "board": {
       "title": "JasBoard",
       "description": "App de escritorio para organizar tus pendientes en diferentes listas reordenables.",
       "link":"https://jasboard.pages.dev/",
       "github":"",
-      "herramientas": ["react", "tailwind"],
-      "img":"/board.png"
+      "herramientas": ["react", "tailwindcss"],
+      "img":"/board.png",
+      "enlaces":"/projects/jasboard"
     },
     "ecuela": {
       "title": "Miguel de Cervantes",
       "description": "Página web informativa sobre la escuela de idiomas 'Miguel de Cervantes Saavedra'.",
       "link":"https://migueldecervantesescuelaidioma.pages.dev/",
       "github":"",
-      "herramientas": ["astro", "tailwind"],
-      "img":"/escuela.png"
+      "herramientas": ["astro", "tailwindcss"],
+      "img":"/escuela.png",
+      "enlaces":"/projects/escuela-idioma-Miguel-Cervantes"
     }
   },
   "educación": {
@@ -49,7 +52,7 @@
     "universidad": {
       "fecha": "Enero 2023 ~ actualmente",
       "title": "Universidad Central Marta Abreu de las Villas.",
-      "certificado": "Ingeniería en Telecomunicaciones y Electrónica (Curso por encuentros)."
+      "certificado": "Ingeniería en Telecomunicaciones y Electrónica."
     },
     "escuela": {
       "fecha": "Enero 2022 ~ Junio 2024",

@@ -1,9 +1,9 @@
 ---
-import Carditem from './Carditem.astro'
-import { getLenguaje } from '../i18n/getlenguaje'
+import Carditem from "./Carditem.astro";
+import { getLenguaje } from "../i18n/getlenguaje";
 
-const {currentLocale}= Astro
-const i18n = getLenguaje(currentLocale).proyectos
+const { currentLocale } = Astro;
+const i18n = getLenguaje(currentLocale).proyectos;
 ---
 
 <section class="p-5 mt-10" id="proyectos">
@@ -38,22 +38,25 @@ const i18n = getLenguaje(currentLocale).proyectos
       imagen="/weather.png"
       titulo={i18n.weather.title}
       descripcion={i18n.weather.description}
-      enlace="/projects/jasweather"
+      enlace={i18n.weather.enlaces}
       alt="mockup Jasweather"
+      id="jasweather"
     />
     <Carditem
       imagen="/board.png"
       titulo={i18n.board.title}
       descripcion={i18n.board.description}
-      enlace="/projects/jasboard"
+      enlace={i18n.board.enlaces}
       alt="mockup Jasboard"
+      id="jasboard"
     />
     <Carditem
       imagen="/escuela.png"
       titulo={i18n.ecuela.title}
       descripcion={i18n.ecuela.description}
-      enlace="/projects/escuela-idioma-Miguel-Cervantes"
       alt="mockup web Miguel de Cervantes"
+      id="escuela-idioma-Miguel-Cervantes"
+      enlace={i18n.ecuela.enlaces}
     />
   </div>
 </section>

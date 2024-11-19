@@ -22,26 +22,38 @@
     "weather": {
       "title": "JasWeather",
       "description": "Website to check real-time weather and statistics.",
-      "link":"https://jasweather.pages.dev/",
-      "github":"https://github.com/jaasidev/weather-app",
-      "herramientas": ["react", "tailwind"],
-      "img":"/weather.png"
+      "link": "https://jasweather.pages.dev/",
+      "github": "https://github.com/jaasidev/weather-app",
+      "herramientas": [
+        "react",
+        "tailwindcss"
+      ],
+      "img": "/weather.png",
+      "enlaces": "/en/projects/jasweather"
     },
     "board": {
       "title": "JasBoard",
       "description": "Desktop app to organize tasks in reorderable lists.",
-      "link":"https://jasboard.pages.dev/",
-      "github":"https://github.com/jaasidev/trello-react-app",
-      "herramientas": ["react", "tailwind"],
-      "img":"/board.png"
+      "link": "https://jasboard.pages.dev/",
+      "github": "https://github.com/jaasidev/trello-react-app",
+      "herramientas": [
+        "react",
+        "tailwindcss"
+      ],
+      "img": "/board.png",
+      "enlaces": "/en/projects/jasboard"
     },
     "ecuela": {
       "title": "Miguel de Cervantes",
       "description": "Website about the language school 'Miguel de Cervantes'.",
-      "link":"https://migueldecervantesescuelaidioma.pages.dev/",
-      "github":"https://github.com/jaasidev/idioma-landing-MCS",
-      "herramientas": ["astro", "tailwind"],
-      "img":"/escuela.png"
+      "link": "https://migueldecervantesescuelaidioma.pages.dev/",
+      "github": "https://github.com/jaasidev/idioma-landing-MCS",
+      "herramientas": [
+        "astro",
+        "tailwindcss"
+      ],
+      "img": "/escuela.png",
+      "enlaces": "/en/projects/escuela-idioma-Miguel-Cervantes"
     }
   },
   "educación": {
@@ -49,7 +61,7 @@
     "universidad": {
       "fecha": "January 2023 ~ Present",
       "title": "Central University Marta Abreu de las Villas.",
-      "certificado": "Telecommunications and Electronics Engineering (Part-time Course)."
+      "certificado": "Telecommunications and Electronics Engineering."
     },
     "escuela": {
       "fecha": "January 2022 ~ June 2024",
